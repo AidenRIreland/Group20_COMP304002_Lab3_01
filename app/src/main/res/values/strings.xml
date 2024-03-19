@@ -1,0 +1,10 @@
+<resources>
+    <string name="AirlineScheduleApp">Group20_COMP304002_Lab3_01</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="Airline_header">Airline Name</string>
+    <!-- Shown above right column listing arrival times in full schedule fragment -->
+    <string name="Arrival_time_header">Arrival Time</string>
+    <string name="Terminal_number">Terminal Number</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

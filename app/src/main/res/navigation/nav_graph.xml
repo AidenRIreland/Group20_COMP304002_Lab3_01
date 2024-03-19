@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/airlineScheduleFragment">
+    <fragment
+        android:id="@+id/airlineScheduleFragment"
+        android:name="com.example.group20_comp304002_lab3_01.viewmodels.ui.airlineschedule.viewmodels.AirlineScheduleFragment"
+        android:label="Airline Schedule"
+        tools:layout="@layout/fragment_airline_schedule" >
+
+        <action
+            android:id="@+id/action_airlineScheduleFragment_to_detailedScheduleFragment"
+            app:destination="@id/detailedScheduleFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailedScheduleFragment"
+        android:name="com.example.group20_comp304002_lab3_01.viewmodels.ui.airlineschedule.viewmodels.DetailedScheduleFragment"
+        android:label="Detailed Schedule"
+        tools:layout="@layout/fragment_detailed_schedule">
+        <argument
+            android:name="stopName"
+            app:argType="string" />
+    </fragment>
+</navigation>
