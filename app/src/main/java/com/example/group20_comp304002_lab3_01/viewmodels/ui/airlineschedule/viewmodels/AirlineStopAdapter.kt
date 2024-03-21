@@ -51,6 +51,7 @@ class AirlineStopAdapter(private val onItemClicked: (Schedule) -> Unit) :
                 textViewStopName.text = schedule.stopName
                 textViewArrivalTime.text = formattedDate // use the formatted date here
                 textViewTerminal.text = schedule.terminal
+                textViewStatus.text = schedule.status
                 root.setOnClickListener { onItemClicked(schedule) }
             }
        /** fun bind(schedule: Schedule) {
